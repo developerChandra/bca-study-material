@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+    --primary: #1e90ff;
+    --secondary: #d5e8fa; 
+    --tertiary: rgb(71, 163, 255);
+    --fourth: #222b34;
+    --logo-color: #205385;
+  }
 body {
   font-family: "Nunito", sans-serif;
   display: grid;
@@ -10,17 +17,17 @@ body {
   grid-template-rows: 60vh 40vh;
 }
 .first {
-  background-color: aquamarine;
+  background-color: var(--primary);
   grid-column: span 2;
 }
 .second {
-  background-color: blue;
+  background-color: var(--secondary);
 }
 .third {
-  background-color: red;
+  background-color: var(--secondary);
 }
 footer {
-  background-color: rgb(139, 158, 156);
+  background-color: var(--fourth);
   grid-column: span 2;
 }
 .first h1,
@@ -34,22 +41,25 @@ footer {
 .first p{
     font-size: 1rem;
     font-weight: bold;
+    color: var(--logo-color);
 }
 .first h3{
     margin-top: 1%;
+    color: #0b1f32;
 }
 .first-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 16vh;
 }
 .card{
-    border: 1px solid black;
+    border: 1px solid rgb(158, 161, 161);
     text-align: center;
     margin: 50px;
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 33%;
+    border-radius: 3px;
 }
 .card h2{
     font-size: 2rem;
@@ -58,9 +68,29 @@ footer {
     width: 40%;
     height: 45px;
     margin: 1% 30% 0 30%;
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--primary);
+    color: #0b1f32;
+}
+.card button:hover{
+    background-color: var(--tertiary);
+    transition: .2s;
 }
 .card p{
     font-weight: bold;
+}
+#logo{
+    color: var(--logo-color);
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 10px 0 0 50px;
+}
+footer{
+    height: 20vh;
 }
 /* For Tablets/iPads Devices */
 @media (min-width: 481px) and (max-width: 1200px){
@@ -89,5 +119,9 @@ footer {
     }
     .first h1{
         font-size: 3rem;
+    }
+    .card button{
+        width: 60%;
+        margin: 1% 20% 0 20%;
     }
 }
