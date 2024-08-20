@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60vh 40vh;
+}
+.first {
+  background-color: aquamarine;
+  grid-column: span 2;
+}
+.second {
+  background-color: blue;
+}
+.third {
+  background-color: red;
+}
+footer {
+  background-color: rgb(139, 158, 156);
+  grid-column: span 2;
+}
+.first h1,
+.first h3, .first-container p {
+  text-align: center;
+}
+.first h1 {
+  font-size: 5rem;
+  vertical-align: middle;
+}
+.first p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.first h3{
+    margin-top: 1%;
+}
+.first-container{
+    border: 1px solid black;
+    margin-top: 16vh;
+}
+.card{
+    border: 1px solid black;
+    text-align: center;
+    margin: 50px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33%;
+}
+.card h2{
+    font-size: 2rem;
+}
+.card button{
+    width: 40%;
+    height: 45px;
+    margin: 1% 30% 0 30%;
+}
+.card p{
+    font-weight: bold;
+}
+/* For Tablets/iPads Devices */
+@media (min-width: 481px) and (max-width: 1200px){
+    body{
+      display: flex;
+      flex-direction: column;
+    }
+    .first{
+        height: 60vh;
+    }
+    .first-container{
+        margin-top: 20vh;
+    }
+}
+/* For Mobile Devices: */
+@media (max-width: 480px){
+    body{
+        display: flex;
+        flex-direction: column;
+      }
+    .first{
+        height: 60vh;
+    }  
+    .first-container{
+        margin-top: 10vh;
+    }
+    .first h1{
+        font-size: 3rem;
+    }
+}
