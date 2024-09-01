@@ -11,14 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="section first">
       <nav>
-        <p id="logo">Developer Chandra</p>
+        <p id="logo"><i id="code-symbol" class="fa fa-code"></i></i> Chandra</p>
       </nav>
       <div class="first-container">
-        <h1>Tata college study materials</h1>
+        <h1>Tata college <span id="study-text">study</span> materials</h1>
         <p>
             This website manily focus for BCA semester's study materials but all the
             subjets are commom for all departments except major BCA paper
@@ -32,7 +33,7 @@
         Download BCA semester-wise new syllabus according to New Education Policy
         2022
       </p>
-      <a href="./syllabus.html"><button class="button syllabus-button">Click here</button></a>
+      <button class="button syllabus-button"><a href="./syllabus.html">Click here</a></button>
     </div>
     <div class="section third card">
       <h2>PYQs</h2>
@@ -40,10 +41,19 @@
         Download BCA semester-wise previous year questions according to New
         Education Policy 2022
       </p>
-      <a href="./pyqs.html"><button class="button pyq-button">Click here</button></a>
+      <button class="button pyq-button"><a href="./pyqs.html">Click here</a></button>
     </div>
     <footer>
-        <h1>Footer</h1>
+        <div>
+          <h3>Social Links</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/chandra_555_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100029461836803" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://x.com/cmkumhar" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+          <p>made with <i id="heart" class="fa fa-heart"></i> by <span id="chandra">chandra</span></p>
+        </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
