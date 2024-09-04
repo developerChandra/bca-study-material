@@ -169,7 +169,7 @@ footer div p{
       flex-direction: column;
     }
     .first{
-        height: 60vh;
+        height: fit-content;
     }
     .first-container{
         margin-top: 20vh;
@@ -193,7 +193,7 @@ footer div p{
         flex-direction: column;
       }
     .first{
-        height: 60vh;
+        height: fit-content;
     }  
     .first-container{
         margin-top: 3vh;
