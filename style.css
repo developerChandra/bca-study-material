@@ -170,6 +170,7 @@ footer div p{
     }
     .first{
         height: fit-content;
+        padding: 0 0 2rem 0;
     }
     .first-container{
         margin-top: 20vh;
